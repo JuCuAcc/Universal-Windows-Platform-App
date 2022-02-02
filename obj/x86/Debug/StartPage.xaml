@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Library.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:ConnectionId='2' x:Name="mediaElement">
+        <Grid.Background>
+            <ImageBrush ImageSource="desktop-backgrounds.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <MediaElement x:ConnectionId='3' x:Name="media" Source="WeAreLibraries.mp4" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="575"/>
+        <Button x:ConnectionId='4' x:Name="btnPlay"  Content="Play"  Margin="75,330,0,0"  VerticalAlignment="Top" Height="50" Width="75"                       />
+        <Button x:ConnectionId='5' x:Name="btnPause" Content="Pause" Margin="255,330,0,0" VerticalAlignment="Top" Height="50" Width="75"                        />
+        <Button x:ConnectionId='6' x:Name="btnStop"  Content="Stop"  Margin="400,330,0,0" VerticalAlignment="Top" Height="50" Width="75"                       />
+        <Button x:ConnectionId='7' x:Name="btnBooks" Content="Trending Books" Margin="437,528,0,0" VerticalAlignment="Top" Width="500" Height="120" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Background="#33FB0404" IsEnabled="True"                       >
+            <Button.Foreground>
+                <AcrylicBrush TintColor="#CCECE4E4" TintOpacity="0.99"/>
+            </Button.Foreground>
+        </Button>
+    </Grid>
+</Page>
+
